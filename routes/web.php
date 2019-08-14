@@ -11,11 +11,8 @@
 |
  */
 
-Route::get('/', function () {
-    $data = ['name' => 'tad', 'say' => '嗨！'];
-    return view('welcome', $data);
-});
-
 Auth::routes();
 
+Route::get('/', 'ProductController@index')->name('index');
+Route::get('/product', 'ProductController@index')->name('product.index');
 Route::get('/home', 'HomeController@index')->name('home');
