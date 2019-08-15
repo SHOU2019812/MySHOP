@@ -11,7 +11,7 @@
     <title>@yield('title') {{ config('app.name', 'Laravel') }}</title>
 
     <!-- Scripts -->
-    <script src="{{ mix('js/app.js') }}" defer></script>
+    <script src="{{ mix('js/app.js') }}"></script>
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -30,6 +30,7 @@
             </div>
         </main>
     </div>
+
     @yield('scriptsAfterJs')
 </body>
 
